@@ -1,0 +1,163 @@
+:root {
+  --primary-color: #003366;
+  --secondary-color: #ffcccb;
+  --text-color: #333;
+  --background-color: #f9f9f9;
+  --alert-bg-color: #ffe5e5;
+  --alert-text-color: #8b0000;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styling */
+.home-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Bar */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.university-logo {
+  width: 60px;
+  height: auto;
+}
+
+.login-btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #004080;
+}
+
+/* Header Section */
+.header-section {
+  padding: 2rem;
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+}
+
+.university-title {
+  font-family: 'Merriweather', serif;
+  font-size: 1.8rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.grievance-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+/* Main Content */
+.main-content {
+  padding: 2rem;
+}
+
+.intro-section p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Alert Styling */
+.alert {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background-color: var(--alert-bg-color);
+  color: var(--alert-text-color);
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+/* Action Section */
+.action-section {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+/* Register Button Styling */
+.register-btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #004080;
+}
+
+/* Image Styling */
+.support-image {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.support-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .login-btn {
+    margin-top: 1rem;
+  }
+
+  .header-section {
+    padding: 1.5rem;
+  }
+
+  .university-title {
+    font-size: 1.5rem;
+  }
+
+  .grievance-title {
+    font-size: 1rem;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+}

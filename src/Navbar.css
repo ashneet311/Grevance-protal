@@ -1,0 +1,65 @@
+/* Navbar Background and Logo */
+.navbar {
+  background-color: #003366;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 50px;
+  width: auto; /* Keeps aspect ratio */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+/* Center Navbar Items */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Style for Login Button */
+.ml-auto .nav-link {
+  color: #afec3f;
+  background-color: #1f65e6;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.ml-auto .nav-link:hover {
+  background-color: #005bb5;
+}
+
+/* Navbar Collapse for Responsiveness */
+.navbar-collapse {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Right Align Login Button */
+.ml-auto {
+  margin-left: auto;
+}
+
+
+  
